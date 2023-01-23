@@ -3,6 +3,8 @@
 #include <unordered_set>
 using namespace std;
 
+// Given a string s, find the length of the longest substring without repeating characters.
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {

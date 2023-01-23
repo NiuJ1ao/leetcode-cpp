@@ -1,8 +1,11 @@
 #include <vector>
 using namespace std;
 
+// Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+
 class Solution {
 public:
+    // merge sort
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         double res = 0;
 
@@ -43,6 +46,7 @@ public:
         return res;
     }
 
+    // terminate when locate the median
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         double res = 0;
         int lenNums1 = nums1.size(), lenNums2 = nums2.size();
