@@ -16,7 +16,7 @@ public:
             vector<bool> dp(len + 1);
             dp[0] = true; //base case
             for (int i = 1; i < len + 1; i++) {
-                for (int j = i == len; j < i; j++) {
+                for (int j = i == len; j < i; j++) { // Note: There is an corner case, when i == length, since we don't want to use the word itself directly, we should check 1 <= j < i instead.
                     if (dp[i]) break;
                     dp[i] = dp[j] && dict.count(w.substr(j, i - j));
                 }
