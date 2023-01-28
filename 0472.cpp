@@ -4,6 +4,8 @@
 #include <unordered_map>
 using namespace std;
 
+// Given an array of strings words (without duplicates), return all the concatenated words in the given list of words.
+
 class Solution {
 public:
     // DP

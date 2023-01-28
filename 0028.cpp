@@ -41,8 +41,9 @@ public:
 
             if (j == M) {
                 return i - j;
+                // j = lps[j - 1];
             } 
-
+            // else
             if (i < N && needle[j] != haystack[i]) {
                 if (j != 0) {
                     j = lps[j - 1];
