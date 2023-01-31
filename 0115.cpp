@@ -2,6 +2,11 @@
 #include <vector>
 using namespace std;
 
+/*
+Given two strings s and t, return the number of distinct subsequences of s which equals t.
+A subsequence is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters.
+*/
+
 class Solution {
 public:
     int numDistinct(string s, string t) {
