@@ -7,7 +7,7 @@ using namespace std;
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-                int M = needle.length(); // pattern length
+        int M = needle.length(); // pattern length
         int N = haystack.length();  // text length
 
         // longest prefix
