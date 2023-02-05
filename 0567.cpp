@@ -48,7 +48,6 @@ public:
 
     // sliding window optimized
     bool checkInclusion(string s1, string s2) {
-        int i = 0;
         int m = s1.length(), n = s2.length();
         if (m > n) {
             return false;
