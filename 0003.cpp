@@ -48,6 +48,7 @@ public:
             char i = s[end-1];
             m[i]++;
 
+            // repeated char detected, move start
             while (m[i] > 1) {
                 char j = s[start];
                 m[j]--;
