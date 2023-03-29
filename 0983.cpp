@@ -19,7 +19,7 @@ Return the minimum number of dollars you need to travel every day in the given l
 
 class Solution {
 public:
-    // DP
+    // Maintain last7 and last30 queues
     int mincostTickets(vector<int>& days, vector<int>& costs) {
         queue<pair<int, int>> last7, last30;
         int cost = 0;
@@ -34,6 +34,7 @@ public:
         return cost;
     }
 
+    // DP
     int mincostTickets(vector<int>& days, vector<int>& costs) {
         unordered_set<int> travel(begin(days), end(days));
         vector<int> dp(366);
