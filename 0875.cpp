@@ -24,11 +24,12 @@ public:
 
             int t = 0;
             for (int b: piles) {
-                double tpp = (double) b / m;
+                double tpp = (double) b / m; // time per pile
                 t += ceil(tpp);
             }
             
             if (t > h) {
+                // if take too long, eat faster
                 l = m + 1;
             } else {
                 r = m;

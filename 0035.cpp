@@ -26,7 +26,7 @@ public:
             idx = i + (j - i) / 2;
         }
         if (target == nums[idx]) {
-                return idx;
+            return idx;
         }
         return idx + 1;
     }
