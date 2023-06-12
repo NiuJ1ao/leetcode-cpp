@@ -45,7 +45,7 @@ public:
         return 0;
     }
 
-    // different way to write BFS
+    // Greedy BFS
     // maxReachable: the furthest index can be reached from current level (end of next layer)
     int jump(vector<int>& nums) {
         int n = nums.size(), i = 0, maxReachable = 0, lastJumpedPos = 0, jumps = 0;
